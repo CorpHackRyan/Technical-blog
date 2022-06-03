@@ -22,12 +22,12 @@
     If you have anything you wish to say, feel free to <a href="mailto:ryanoconnor.dev@gmail.com">email me.</a> <br>
 </h2>
 
-<h2 class="update">(last update: 4/8/22 @ 12:26:16)</h2><br>
+<h2 class="update">(last update: 6/3/22 @ 09:08:16)</h2><br>
 
 <?php
          $dbhost = 'localhost';
          $dbuser = 'blog';
-         $dbpass = {left-Blank}
+         $dbpass = 'Blog1234!';
          $dbname = 'blogentrys';
 
          //Create connection
@@ -38,7 +38,7 @@
             die('Could not connect: ' . mysqli_error());
 
          }
-         echo 'Connected successfully to mariaDB via PHP ' . PHP_VERSION .  ' at ' . date("h:i:sa") . ' on ' . date("l m/d/Y");
+         echo  '<center>Connected successfully to mySQL server via PHP ' . PHP_VERSION .  ' at ' . date("h:i:sa") . ' on ' . date("l m/d/Y") . '</center>';
 
          $query = mysqli_query($conn, "SELECT * FROM actionitems");
 
@@ -56,9 +56,25 @@
          mysqli_close($conn);
 ?>
 
+<div class="blog-entry">
+<h3>Friday June 3rd, 2022 - 09:13:31 (E.S.T.) - 11th Blog entry</h3>
+<h2>React, Linux and some other stuff</h2>
+<p>Whoa it's been almost 2 months since I posted an entry in here. I've been fairly active according to my <a href="https://github.com/corphackryan">GitHUb</a>. So, let's see, since my
+last push here on this site I've worked on a tutorial for building a tic-tac-toe game in React, a take home assessment for Oracle building a GUI app in Java Swing, some PHP coding around
+JSON files, experimenting with Jupyter notebook and learning about all the wonderful features of NumPy.<br><br>Guess I'll start with React. I'm following a few different tutorials that
+I've found online. It seems like everywhere I look when applying to jobs has some sort of React involved in it. So I figured why not, let's get some exposure to it. I do have a goal in mind
+to eventually change this page over into React. It probably doesn't make much sense to do that but for learning purposes, that's why I'd be doing it. I have probably only spent about 4 hours
+total from getting the stuff required to get it running installed to having a working app. Setup and configuration seemed ok. I ran into some issues installing node.js on my system but a
+few quick google searches I was able to overcome all of the minor issues. Being on linux certainly is a little more challenging when installing software compared to Windows. You don't just
+double click an .exe file, choose a path and voila! Successful install of said application. No, it's definitely a little more complicated than that. I find myself struggling with path stuff in
+linux. I'm about 15 months into using Linux full time as my primary OS, and while I'd never go back to Windows, I still find myself having to researching how to do things quite a bit. That was
+the whole point actually in making the switch - to force myself to learn how to navigate linux - and I'm still way behind the curve. But,
+</div>
+
 
 <div class="blog-entry">
     <h3>Friday April 8th, 2022 - 08:22:18 (E.S.T.) - 10th Blog Entry</h3>
+    <h2>SQL, Python and regex</h2>
     <p>I am becoming  very comfortable with moving between programming languages now. I was programming a lot of HTML/CSS for a while, then moved back into Python. I'm becoming
     somewhat competent now in setting up the different environments for each language. It's pretty exciting actually. I was doing a lot of SQL work last week.  I actually had
     mySQL workbench installed a couple months ago as recommended by a mentor, but hadn't actually used it extensively until recently. After having gone through a week long mySQL fundamentals class now,
